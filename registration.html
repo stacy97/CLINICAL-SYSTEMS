@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container"></div>
+        <h2>User Login</h2>
+        <form action="/login" method="post" id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>       
+            <label for="password"> Password:</label>
+            <input type="password" id="password" name="password" required><br><br>          
+        </form>
+       </div>
+       <h2>Patient Registration</h2>
+       <form action="/registration" method="post" id="registration">    
+            <label for="patientsname">Patientsname:</label>
+            <input type="text" id="patientsname" name="patientsname" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+            <label for="phone">Phonenumber:</label>
+            <input type="number" id="phone" name="phone" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+        <div id="registrationDetails"></div>
+    </div>
+   
+</body>
+</html>

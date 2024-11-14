@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medication Form</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Medication Form</h2>
+     <form action="/medication" method="post" id="medication">
+        <label for="medicationname">Medication Name:</label><br>
+        <input type="text" id="medicationname" name="medicationname" oninput="validate()"><br>
+        <div id="emptyerror" style="color: red;"></div>
+        <label for="dosage">Dosage:</label><br>
+        <input type="text" id="dosage" name="dosage" required><br>
+        <label for="frequency">Frequency:</label><br>
+        <input type="text" id="frequency" name="frequency" required><br>
+        <label for="duration">Duration:</label><br>
+        <input type="text" id="duration" name="duration" required><br>
+        <input type="submit" value="Register">
+      </form>
+        <div id="medicationDetails"></div>
+    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient diagnoses</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patient diagnoses</h2>
+        <form action="/patientdiagnoses" method="post" id="patientdiagnoses">
+            <label for="patientid">ID number:</label>
+            <input type="number" id="idnumber" name="idnumber" required><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <label for="allergies">Allergies:</label>
+            <textarea id="text" name="allergies" required></textarea><br><br>
+            <label for="medications">Medications:</label>
+            <input type="text" id="medications" name="medications" required><br><br>
+            <label for="diagnosis">Diagnosis:</label>
+            <input type="text" id="diagnosis" name="diagnosis" required><br><br>
+            <label for="lastvisitdate">Last visit date:</label>
+            <input type="date" id="lastvisitdate" name="lastvisitdate" required><br><br>
+            <label for="newappointmentdate">New appointment date</label>:</label>
+            <input type="date" id="newappointmentdate" name="mewappointmentdate" required><br><br>
+            <input type="submit" value="Register">
+            </form>
+            <div id="registrationDetails"></div>
+        </div>
+    </form>
+    </body>
+</html>
+   

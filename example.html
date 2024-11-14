@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Records System</title>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button onclick="showRegistrationForm()">Register</button>
+                <button onclick="showDiagnosesForm()">Diagnoses Form</button>
+                <button onclick="showMedicationForm()">Medication Form</button>
+            </form>
+        </div>
+        <div id="registrationForm" class="form-container hidden">
+            <h2>Registration</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button onclick="showLoginForm()">Login</button>
+                <button onclick="showDiagnosesForm()">Diagnoses Form</button>
+                <button onclick="showMedicationForm()">Medication Form</button>
+            </form>
+        </div>
+        <div id="diagnosesForm" class="form-container hidden">
+            <h2>Diagnoses Form</h2>
+            <form>
+                <input type="text" placeholder="Patient Name" required>
+                <textarea placeholder="Diagnosis" required></textarea>
+                <button onclick="showLoginForm()">Login</button>
+                <button onclick="showRegistrationForm()">Register</button>
+                <button onclick="showMedicationForm()">Medication Form</button>
+            </form>
+        </div>
+        <div id="medicationForm" class="form-container hidden">
+            <h2>Medication Form</h2>
+            <form>
+                <input type="text" placeholder="Medication Name" required>
+                <textarea placeholder="Prescription" required></textarea>
+                <button onclick="showLoginForm()">Login</button>
+                <button onclick="showRegistrationForm()">Register</button>
+                <button onclick="showDiagnosesForm()">Diagnoses Form</button>
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+</html>
